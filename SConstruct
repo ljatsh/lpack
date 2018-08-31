@@ -14,3 +14,4 @@ pack = env.SharedLibrary('pack',
                          LIBS = ['dl'])
 
 env.Install('/usr/local/lib/lua/5.1', pack)
+env.Alias('install', '/usr/local/lib/lua/5.1')
